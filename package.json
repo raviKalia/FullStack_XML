@@ -1,0 +1,20 @@
+{
+  "name": "Lab-7_XML",
+  "version": "1.0.0",
+  "description": "Test XML and JSDom module",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Ravi Kalia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.2",
+    "jsdom": "^26.1.0",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

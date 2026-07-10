@@ -1,0 +1,20 @@
+extends layout
+
+block main-content
+  -
+    let libName = library.querySelector("name").textContent;
+    let libAddress = library.querySelector("address").textContent;
+    let libPhone = library.querySelector("phoneNumber").textContent;
+    let coordinates = library.querySelector("coordinates").textContent.trim().split(",");
+    let mapUrl = `https://www.google.com/maps?q=${coordinates[1]},${coordinates[0]}`;
+
+  h1 #{libName}
+  p Address: #{libAddress}
+  p Contact: #{libPhone}
+
+  h2 Location
+  p
+    a(href=mapUrl target="_blank") View on Google Maps
+
+  p
+    a(href="/")  ← Back to all libraries
